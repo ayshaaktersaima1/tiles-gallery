@@ -1,7 +1,12 @@
+
 import Link from "next/link";
+import ActiveNavLink from "./ActiveNavLink";
+
 
 
 const Navbar = () => {
+
+
 
     return (
         <div>
@@ -14,18 +19,18 @@ const Navbar = () => {
                         <ul
                             tabIndex="-1"
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><Link href={'/'}>Home</Link></li>
-                            <li><Link href={'/all-tiles'}>All tiles</Link></li>
-                            <li><Link href={'/profile'}>Profile</Link></li>
+                            <li><ActiveNavLink href={'/'}>Home</ActiveNavLink></li>
+                            <li><ActiveNavLink href={'/all-tiles'}>All tiles</ActiveNavLink></li>
+                            <li><ActiveNavLink href={'/profile'}>Profile</ActiveNavLink></li>
                         </ul>
                     </div>
                     <a className="btn btn-ghost text-xl">daisyUI</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><Link href={'/'}>Home</Link></li>
-                        <li><Link href={'/all-tiles'}>All tiles</Link></li>
-                        <li><Link href={'/profile'}>Profile</Link></li>
+                        <li><ActiveNavLink href={'/'}>Home</ActiveNavLink></li>
+                        <li><ActiveNavLink href={'/all-tiles'}>All tiles</ActiveNavLink></li>
+                        <li><ActiveNavLink href={'/profile'}>Profile</ActiveNavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
