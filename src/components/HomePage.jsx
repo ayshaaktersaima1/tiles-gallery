@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import Banner from './Banner';
+import Card from './Card';
 
 const HomePage = async () => {
 
@@ -15,9 +16,9 @@ const HomePage = async () => {
 
             <div className='w-[90%] mx-auto'>
                 <h1>Featured tiles</h1>
-                <div>
+                <div className='grid grid-cols-4 gap-5 '>
                     {
-                        data.slice(0, 3).map(tile => (<p key={tile.id}>{tile.title}</p>))
+                        data.slice(0, 4).map(tile => <Card key={tile.id} tile={tile}></Card>)
                     }
                 </div>
 
