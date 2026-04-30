@@ -1,0 +1,98 @@
+[
+    {
+        "id": "tile_001",
+        "title": "Glossy Blue Ceramic Tile",
+        "description": "Smooth glossy ceramic tile in deep blue tone, ideal for modern bathrooms and kitchens",
+        "image": "https://images.unsplash.com/photo-1582582494700-5f8d5c70f6c4?auto=format&fit=crop&w=800&q=80",
+        "category": "ceramic",
+        "price": 45.99,
+        "currency": "USD",
+        "dimensions": "60x60 cm",
+        "material": "Ceramic",
+        "inStock": true
+    },
+    {
+        "id": "tile_002",
+        "title": "White Marble Vein Tile",
+        "description": "Classic white marble tile with natural grey veining for luxury interiors",
+        "image": "https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=800&q=80",
+        "category": "marble",
+        "price": 89.99,
+        "currency": "USD",
+        "dimensions": "80x80 cm",
+        "material": "Marble",
+        "inStock": true
+    },
+    {
+        "id": "tile_003",
+        "title": "Geometric Pattern Floor Tile",
+        "description": "Modern geometric patterned tile perfect for statement floors and feature walls",
+        "image": "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=800&q=80",
+        "category": "pattern",
+        "price": 55.50,
+        "currency": "USD",
+        "dimensions": "50x50 cm",
+        "material": "Porcelain",
+        "inStock": true
+    },
+    {
+        "id": "tile_004",
+        "title": "Wood Texture Porcelain Tile",
+        "description": "Realistic wood-look tile combining durability of porcelain with natural wood aesthetics",
+        "image": "https://images.unsplash.com/photo-1592928303928-9d0b6c48d9f7?auto=format&fit=crop&w=800&q=80",
+        "category": "wood",
+        "price": 62.75,
+        "currency": "USD",
+        "dimensions": "120x20 cm",
+        "material": "Porcelain",
+        "inStock": false
+    },
+    {
+        "id": "tile_005",
+        "title": "Matte Black Minimal Tile",
+        "description": "Elegant matte black tile designed for minimalist and modern interior styles",
+        "image": "https://images.unsplash.com/photo-1604709177225-055f99402ea3?auto=format&fit=crop&w=800&q=80",
+        "category": "ceramic",
+        "price": 49.99,
+        "currency": "USD",
+        "dimensions": "60x60 cm",
+        "material": "Ceramic",
+        "inStock": true
+    },
+    {
+        "id": "tile_006",
+        "title": "Colorful Mosaic Tile",
+        "description": "Vibrant mosaic tile with intricate patterns, perfect for decorative accents",
+        "image": "https://images.unsplash.com/photo-1578898887932-dce23a595ad4?auto=format&fit=crop&w=800&q=80",
+        "category": "mosaic",
+        "price": 70.00,
+        "currency": "USD",
+        "dimensions": "30x30 cm",
+        "material": "Glass",
+        "inStock": true
+    },
+    {
+        "id": "tile_007",
+        "title": "Concrete Style Industrial Tile",
+        "description": "Raw concrete-look tile suited for industrial and urban interior designs",
+        "image": "https://images.unsplash.com/photo-1596477600932-2fbb7c3b1b52?auto=format&fit=crop&w=800&q=80",
+        "category": "concrete",
+        "price": 58.20,
+        "currency": "USD",
+        "dimensions": "75x75 cm",
+        "material": "Porcelain",
+        "inStock": true
+    },
+    {
+        "id": "tile_008",
+        "title": "Luxury Marble Gold Vein Tile",
+        "description": "Premium marble tile featuring subtle gold veins for high-end interiors",
+        "image": "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?auto=format&fit=crop&w=800&q=80",
+        "category": "marble",
+        "price": 120.00,
+        "currency": "USD",
+        "dimensions": "90x90 cm",
+        "material": "Marble",
+        "inStock": false
+    }
+]
