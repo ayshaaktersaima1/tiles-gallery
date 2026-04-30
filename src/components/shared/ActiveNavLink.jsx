@@ -9,7 +9,7 @@ const ActiveNavLink = ({ children, href }) => {
     console.log('here is your active', pathName)
     return (
         <div>
-            <Link href={href} className={`${isActivePath ? 'bg-amber-600' : ''}`}>{children}</Link>
+            <Link href={href} className={`${isActivePath ? 'font-extrabold border-b' : ''}`}>{children}</Link>
         </div>
     );
 };

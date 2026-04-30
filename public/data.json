@@ -9,7 +9,12 @@
         "currency": "USD",
         "dimensions": "60x60 cm",
         "material": "Ceramic",
-        "inStock": true
+        "inStock": true,
+        "tags": [
+            "glossy",
+            "blue",
+            "modern"
+        ]
     },
     {
         "id": "tile_002",
@@ -21,7 +26,12 @@
         "currency": "USD",
         "dimensions": "80x80 cm",
         "material": "Marble",
-        "inStock": true
+        "inStock": true,
+        "tags": [
+            "marble",
+            "luxury",
+            "classic"
+        ]
     },
     {
         "id": "tile_003",
@@ -33,7 +43,12 @@
         "currency": "USD",
         "dimensions": "50x50 cm",
         "material": "Porcelain",
-        "inStock": true
+        "inStock": true,
+        "tags": [
+            "geometric",
+            "modern",
+            "pattern"
+        ]
     },
     {
         "id": "tile_004",
@@ -45,7 +60,12 @@
         "currency": "USD",
         "dimensions": "120x20 cm",
         "material": "Porcelain",
-        "inStock": false
+        "inStock": false,
+        "tags": [
+            "wood",
+            "natural",
+            "warm"
+        ]
     },
     {
         "id": "tile_005",
@@ -57,7 +77,12 @@
         "currency": "USD",
         "dimensions": "60x60 cm",
         "material": "Ceramic",
-        "inStock": true
+        "inStock": true,
+        "tags": [
+            "black",
+            "minimal",
+            "modern"
+        ]
     },
     {
         "id": "tile_006",
@@ -69,7 +94,12 @@
         "currency": "USD",
         "dimensions": "30x30 cm",
         "material": "Glass",
-        "inStock": true
+        "inStock": true,
+        "tags": [
+            "mosaic",
+            "colorful",
+            "decorative"
+        ]
     },
     {
         "id": "tile_007",
@@ -81,7 +111,12 @@
         "currency": "USD",
         "dimensions": "75x75 cm",
         "material": "Porcelain",
-        "inStock": true
+        "inStock": true,
+        "tags": [
+            "concrete",
+            "industrial",
+            "modern"
+        ]
     },
     {
         "id": "tile_008",
@@ -93,6 +128,11 @@
         "currency": "USD",
         "dimensions": "90x90 cm",
         "material": "Marble",
-        "inStock": false
+        "inStock": false,
+        "tags": [
+            "marble",
+            "luxury",
+            "premium"
+        ]
     }
 ]

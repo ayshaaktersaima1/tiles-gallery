@@ -1,6 +1,7 @@
 
 import Link from "next/link";
 import ActiveNavLink from "./ActiveNavLink";
+import Image from "next/image";
 
 
 
@@ -24,7 +25,11 @@ const Navbar = () => {
                             <li><ActiveNavLink href={'/profile'}>Profile</ActiveNavLink></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    {/* <a className="btn btn-ghost text-xl font-bold">Tiles Gallery</a> */}
+                    <Link href={'/'}>
+                        <Image src={'/assets/logo.png'} alt="Tiles Gallery" height={70} width={100}></Image>
+
+                    </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
