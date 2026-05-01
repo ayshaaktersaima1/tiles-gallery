@@ -8,7 +8,7 @@ const AllTiles = async () => {
     console.log(data);
 
     return (
-        <div className='w-[90%] mx-auto mt-10 md:mt-20'>
+        <div className='w-[90%] mx-auto my-10 md:my-20'>
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
                 {
