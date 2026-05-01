@@ -20,7 +20,7 @@ const Banner = () => {
                                 Discover premium surfaces designed to transform interiors with elegance, texture, and lasting durability.
                             </p>
                         </div>
-                        <Link href={'/all-tiles'}> <button className="btn bg-black text-white border-none shadow-black">Browse Collection</button></Link>
+                        <Link href={'/all-tiles'}> <button className="btn bg-black text-white border-none shadow-black rounded-none">Browse Collection</button></Link>
                     </div>
                 </div>
             </div>

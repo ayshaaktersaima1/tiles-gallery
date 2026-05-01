@@ -19,7 +19,7 @@ const RegisterPage = () => {
                         <input type="text" className="input" placeholder="Photo-url" />
                         <label className="label">Password</label>
                         <input type="password" className="input" placeholder="Password" />
-                        <button className="btn btn-neutral mt-4">Register</button>
+                        <button className="btn btn-neutral mt-4 rounded-none">Register</button>
                     </fieldset>
                     <p className='text-center mt-2'>Already have an account?<span className='text-red-600'><Link href={'/login'}> Login</Link></span></p>
 
