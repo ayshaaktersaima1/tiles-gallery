@@ -3,6 +3,8 @@ import Link from 'next/link';
 import React from 'react';
 import Banner from './Banner';
 import Card from './Card';
+import ScrollingText from './ScrollingText';
+
 
 const HomePage = async () => {
 
@@ -14,6 +16,9 @@ const HomePage = async () => {
     return (
         <div>
             <Banner></Banner>
+            <div>
+                <ScrollingText></ScrollingText>
+            </div>
 
             <div className='w-[90%] mx-auto'>
                 <h1 className='text-5xl text-center font-bold mt-10 md:mt-20 mb-5 md:mb-10'>Featured Tiles</h1>
