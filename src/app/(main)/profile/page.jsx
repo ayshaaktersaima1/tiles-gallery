@@ -1,7 +1,7 @@
 "use client"
-import UpdateProfile from '@/components/UpdateProfile';
 import { authClient } from '@/lib/auth-client';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { FaUserAlt } from 'react-icons/fa';
 
@@ -15,7 +15,6 @@ const ProfilePage = () => {
             return false;
         }
     }
-
 
 
     const userData = authClient.useSession();
@@ -50,7 +49,9 @@ const ProfilePage = () => {
                         <p><span className='font-semibold'>Name: </span>{user?.name}</p>
                         <p><span className='font-semibold'>Email: </span>{user?.email}</p>
                         {/* <button className='btn rounded-3xl px-10 bg-black text-white mt-3'>Update Your Profile</button> */}
-                        <UpdateProfile></UpdateProfile>
+                        <Link href={'/profile/edit'}>
+                            <div className='flex justify-center'>
+                                <button className='btn rounded-3xl px-5 md:px-20 bg-black text-white mt-3'>Update Your Profile</button></div></Link>
 
                     </div>
                 </div>

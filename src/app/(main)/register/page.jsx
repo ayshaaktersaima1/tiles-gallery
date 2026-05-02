@@ -47,7 +47,7 @@ const RegisterPage = () => {
                     <p>Join us to explore premium tile collections</p>
                 </div>
                 <div className="card-body">
-                    <form onSubmit={handleSubmit(HandleRegFunc)}>
+                    <form onKeyDown={(e) => e.key === 'Enter' && e.preventDefault()} onSubmit={handleSubmit(HandleRegFunc)}>
                         <fieldset className="fieldset">
                             <label className="label">Name</label>
                             <input {...register("name", { required: true })} type="text" className="input" placeholder="Name" />

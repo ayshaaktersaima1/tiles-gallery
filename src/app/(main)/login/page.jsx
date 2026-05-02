@@ -41,7 +41,7 @@ const LoginPage = () => {
                     <p>Enter your details to continue</p>
                 </div>
                 <div className="card-body">
-                    <form onSubmit={handleSubmit(handleLoginFunc)}>
+                    <form onKeyDown={(e) => e.key === 'Enter' && e.preventDefault()} onSubmit={handleSubmit(handleLoginFunc)}>
                         <fieldset className="fieldset">
                             <label className="label">Email</label>
                             <input {...register("email", { required: true })} type="email" className="input" placeholder="Email" />
