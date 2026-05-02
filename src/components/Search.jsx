@@ -1,11 +1,14 @@
 'use client'
-import Link from 'next/link';
 import React, { useState } from 'react';
 import Card from './Card';
 
 const Search = ({ data }) => {
 
     const [searchInput, setSearchInput] = useState('');
+
+    const filterTile = data.filter(tile =>
+        tile.title.toLowerCase().includes(searchInput.toLowerCase())
+    );
 
 
     return (
@@ -25,7 +28,7 @@ const Search = ({ data }) => {
                                 <path d="m21 21-4.3-4.3"></path>
                             </g>
                         </svg>
-                        <input type="search" required placeholder="Search by Title" name='searching' onChange={(e) => setSearchInput(e.target.value)} />
+                        <input type="search" required placeholder="Search by Title" value={searchInput} name='searching' onChange={(e) => setSearchInput(e.target.value)} />
                     </label>
 
                     <button className='btn bg-black rounded-sm text-white border border-black'>Search</button>
@@ -34,7 +37,7 @@ const Search = ({ data }) => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
                 {
-                    data.map(tile => <Card key={tile.id} tile={tile}></Card>)
+                    filterTile.map(tile => <Card key={tile.id} tile={tile}></Card>)
                 }
             </div>
         </div>

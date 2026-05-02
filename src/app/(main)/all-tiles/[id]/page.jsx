@@ -5,7 +5,6 @@ const TileDetails = async ({ params }) => {
     const { id } = await params;
 
     const res = await fetch('https://tiles-gallery-xi.vercel.app/data.json');
-    // const res = await fetch('http://localhost:3000/data.json');
     const data = await res.json();
     const card = data.find(c => c.id == id);
 
