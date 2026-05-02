@@ -1,10 +1,30 @@
+"use client"
+import UpdateProfile from '@/components/UpdateProfile';
+import { authClient } from '@/lib/auth-client';
 import Image from 'next/image';
 import React from 'react';
+import { FaUserAlt } from 'react-icons/fa';
 
 const ProfilePage = () => {
+
+    function isValidUrl(string) {
+        try {
+            new URL(string);
+            return true;
+        } catch (err) {
+            return false;
+        }
+    }
+
+
+
+    const userData = authClient.useSession();
+    const user = userData?.data?.user;
+    const isValid = isValidUrl(user?.image);
+
     return (
         <div className='w-[90%] mx-auto my-10 md:my-20'>
-            <h1 className='text-3xl text-center mb-5'>Welcome back,</h1>
+            <h1 className='text-5xl font-bold text-center mb-5'>Welcome to Tiles Gallery</h1>
             <p className='text-center mb-5'>Manage your personal information and account settings</p>
 
 
@@ -13,14 +33,24 @@ const ProfilePage = () => {
 
 
                 <div className='flex justify-center items-center'>
-                    <Image src={'/assets/banner.jpg'} alt='Profile Picture' height={300} width={300} className='h-60 w-60 rounded-full object-cover'></Image>
+
+                    {
+
+                        isValid &&
+                            user?.image ? <><Image src={user?.image} alt='Profile Picture' height={300} width={300} className='h-60 w-60 rounded-full object-cover'></Image></> :
+                            <><div className='border-2 border-gray-600  rounded-full h-40 w-40 flex justify-center items-center shrink-0'>
+                                <FaUserAlt size={100} />
+                            </div></>
+                    }
+
                 </div>
 
                 <div className='flex justify-center text-left'>
                     <div className='space-y-2 text-base my-4 md:text-lg '>
-                        <p><span className='font-semibold'>Name:</span>Saima</p>
-                        <p><span className='font-semibold'>Email:</span>Saima</p>
-                        <button className='btn rounded-3xl px-10 bg-black text-white mt-3'>Update Your Profile</button>
+                        <p><span className='font-semibold'>Name: </span>{user?.name}</p>
+                        <p><span className='font-semibold'>Email: </span>{user?.email}</p>
+                        {/* <button className='btn rounded-3xl px-10 bg-black text-white mt-3'>Update Your Profile</button> */}
+                        <UpdateProfile></UpdateProfile>
 
                     </div>
                 </div>
