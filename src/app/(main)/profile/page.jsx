@@ -24,7 +24,7 @@ const ProfilePage = () => {
 
     return (
         <div className='w-[90%] mx-auto my-10 md:my-20'>
-            <h1 className='text-5xl font-bold text-center mb-5'>Welcome to Tiles Gallery</h1>
+            <h1 className='text-3xl md:text-5xl font-bold text-center mb-1 md:mb-5'>Welcome to Tiles Gallery</h1>
             <p className='text-center mb-5'>Manage your personal information and account settings</p>
 
 

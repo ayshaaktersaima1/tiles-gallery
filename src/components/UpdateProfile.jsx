@@ -1,6 +1,7 @@
 import { authClient } from '@/lib/auth-client';
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 
 const UpdateProfile = () => {
 
@@ -14,11 +15,21 @@ const UpdateProfile = () => {
     } = useForm();
 
     const handleUpdateBtn = async (data) => {
+        const name = data.name;
+        const image = data.photoUrl;
 
-        await authClient.updateUser({
-            image: data.photoUrl,
-            name: data.name,
-        })
+        if (name !== '' || image !== '') {
+            await authClient.updateUser({
+                image: image,
+                name: name,
+            })
+            toast.success('Update Successful');
+        }
+        else {
+            toast.error('Please Enter Name or Photo url to update');
+        }
+
+
     }
 
     return (
@@ -35,6 +46,7 @@ const UpdateProfile = () => {
                                     <input type='text' {...register("name")} className="input" placeholder="Name" />
                                     <label className="label">Photo-url</label>
                                     <input {...register("photoUrl")} type="text" className="input" placeholder="photoUrl" />
+
 
                                     <button className="btn btn-neutral mt-4">Update</button>
                                 </fieldset>
