@@ -10,11 +10,10 @@ const Search = ({ data }) => {
         tile.title.toLowerCase().includes(searchInput.toLowerCase())
     );
 
-
     return (
         <div>
             <div >
-                <form className='w-full flex justify-center items-center my-5 md:my-10'>
+                <form onSubmit={(e) => e.preventDefault()} className='w-full flex justify-center items-center my-5 md:my-10'>
                     <label className="input flex-1">
                         <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <g

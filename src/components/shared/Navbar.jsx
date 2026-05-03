@@ -64,16 +64,21 @@ const Navbar = () => {
 
                                 {
                                     isValid ? <>
-                                        <div className="avatar avatar-online">
-                                            <div className="w-12 rounded-full">
+                                        <Link href={'/profile'}>
+                                            <div className="avatar avatar-online">
+                                                <div className="w-12 rounded-full">
 
 
-                                                <Image src={user?.image} alt='Profile pic' height={60} width={60}></Image>
+                                                    <Image src={user?.image} alt='Profile pic' height={60} width={60}></Image>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </> : <><div className='border-2 border-gray-600  rounded-full h-12 w-12 flex justify-center items-center shrink-0'>
-                                        <FaUserAlt size={30} />
-                                    </div></>
+                                        </Link>
+                                    </> : <>
+                                        <Link href={'/profile'}>
+                                            <div className='border-2 border-gray-600  rounded-full h-12 w-12 flex justify-center items-center shrink-0'>
+                                                <FaUserAlt size={30} />
+                                            </div></Link>
+                                    </>
                                 }
 
 
