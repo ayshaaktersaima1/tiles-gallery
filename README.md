@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+● Website Name: Tiles Gallery Website
 
-## Getting Started
+● Live URL : https://tiles-gallery-xi.vercel.app/
 
-First, run the development server:
+● Purpose: This project is a Tiles Gallery Web Application where users can explore different types of tiles, view detailed information and manage their profile. It is built to practice Next.js, authentication, and responsive UI design.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+● Key Features: 
+(1) Responsive Navbar with active route highlighting and login/logout state.
+(2) Home page with banner, marquee,Featured tiles section, Why Choose Us section and footer with social links and contact section.
+(3) Browse all tiles with search functionality.
+(4) View detailed information for each tile.
+(5) User authentication (Login & Register).
+(6) Google social login.
+(7) User profile with update feature (name & photo).
+(8) Protected routes for private pages like- profile page and tile details page.
+(9) Fully responsive(mobile, tablet, desktop).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+● NPM Packages Used:
+(1) Next.js
+(2) DaisyUI
+(3) Tailwind CSS
+(4) BetterAuth
+(5) MongoDB Adapter
+(6) Animate.css (on the banner)
+(7) React Toastify
+(8) React Icons

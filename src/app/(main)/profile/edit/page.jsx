@@ -8,7 +8,6 @@ const ProfileEdit = () => {
     const {
         register,
         handleSubmit,
-        watch,
         formState: { errors },
     } = useForm();
 
@@ -30,6 +29,7 @@ const ProfileEdit = () => {
 
     }
 
+
     return (
         <div className='w-[90%] mx-auto my-10 md:my-20 flex items-center justify-center'>
             <form onKeyDown={(e) => e.key === 'Enter' && e.preventDefault()} className='card-body bg-base-200 w-full max-w-sm shrink-0 shadow-sm' onSubmit={handleSubmit(handleUpdateBtn)}>
@@ -39,9 +39,9 @@ const ProfileEdit = () => {
                 </div>
                 <fieldset className="fieldset">
                     <label className="label font-semibold text-black text-base">Name</label>
-                    <input type='text' {...register("name")} className="input" placeholder="Name" />
+                    <input type='text' {...register("name")} className="input" placeholder="Name" required />
                     <label className="label font-semibold text-black text-base">Photo-url</label>
-                    <input {...register("photoUrl")} type="text" className="input" placeholder="photoUrl" />
+                    <input {...register("photoUrl")} type="text" className="input" placeholder="photoUrl" required />
                     <button className="btn btn-neutral mt-4">Save Changes</button>
                 </fieldset>
             </form>

@@ -24,15 +24,15 @@ const RegisterPage = () => {
             email: data.email,
             password: data.password,
             image: data.photoUrl,
-            callbackURL: "/",
+
         });
-        console.log(error)
+
         if (error) {
-            // toast.error('Please enter valid info');
             toast.error(error.message);
 
         }
         else {
+            await authClient.signOut();
             toast.success('Account created successfully!')
             router.push('/login');
 

@@ -4,6 +4,7 @@ import ActiveNavLink from "./ActiveNavLink";
 import Image from "next/image";
 import { authClient } from "@/lib/auth-client";
 import { FaUserAlt } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 
 
@@ -82,13 +83,17 @@ const Navbar = () => {
                                 }
 
 
-                                <p className="font-semibold hidden md:block">Hey, {user?.name}</p>
-                                <Link href={'/login'}><button onClick={async () => await authClient.signOut()} className="btn rounded-none bg-black text-white">Logout</button></Link></div> </> :
+                                <Link href={'/profile'}>
+                                    <p className="font-semibold hidden md:block">Hey, {user?.name}</p>
+                                </Link>
+                                <Link href={'/login'}><button onClick={async () => {
+                                    await authClient.signOut();
+                                    toast.success('Logout successfully')
+                                }} className="btn rounded-none bg-black text-white">Logout</button></Link></div> </> :
 
                             <><Link href={'/login'}><button className="btn rounded-none bg-black text-white">Login</button></Link></>
                     }
-                    {/* <Link href={'/login'}><button className="btn rounded-none bg-black text-white">Login</button></Link>
-                    <Link href={'/login'}><button onClick={async () => await authClient.signOut()} className="btn rounded-none bg-black text-white">Logout</button></Link> */}
+
                 </div>
             </div>
         </div >

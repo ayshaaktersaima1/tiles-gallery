@@ -18,6 +18,7 @@ const ProfilePage = () => {
 
 
     const userData = authClient.useSession();
+
     const user = userData?.data?.user;
     const isValid = isValidUrl(user?.image);
 

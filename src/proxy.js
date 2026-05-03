@@ -6,14 +6,14 @@ import { headers } from 'next/headers'
 export async function proxy(request) {
 
     const session = await auth.api.getSession({
-        headers: request.headers
+        headers: await headers()
     })
     if (!session) {
         return NextResponse.redirect(new URL('/login', request.url))
     }
-    else {
-        return NextResponse.next();
-    }
+    // else {
+    //     return NextResponse.next();
+    // }
 
 }
 
@@ -23,3 +23,4 @@ export async function proxy(request) {
 export const config = {
     matcher: ['/all-tiles/:path', '/profile', '/profile/edit'],
 }
+
