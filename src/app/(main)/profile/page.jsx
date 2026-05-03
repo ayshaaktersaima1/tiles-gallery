@@ -2,6 +2,7 @@
 import { authClient } from '@/lib/auth-client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 import { FaUserAlt } from 'react-icons/fa';
 
@@ -16,10 +17,14 @@ const ProfilePage = () => {
         }
     }
 
+    const router = useRouter();
 
     const userData = authClient.useSession();
     const user = userData?.data?.user;
     const isValid = isValidUrl(user?.image);
+    if (!userData) {
+        router.push('/login');
+    }
 
     return (
         <div className='w-[90%] mx-auto my-10 md:my-20'>
