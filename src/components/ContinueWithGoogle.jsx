@@ -8,12 +8,6 @@ const ContinueWithGoogle = () => {
         const { data: res, error } = await authClient.signIn.social({
             provider: "google",
         });
-        if (error) {
-            toast.error(error.message);
-        }
-        else {
-            toast.success('Login Successful');
-        }
     }
     return (
         <div>

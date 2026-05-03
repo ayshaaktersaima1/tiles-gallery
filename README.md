@@ -2,7 +2,7 @@
 
 ● Live URL : https://tiles-gallery-xi.vercel.app/
 
-● Purpose: This project is a Tiles Gallery Web Application where users can explore different types of tiles, view detailed information and manage their profile. It is built to practice Next.js, authentication, and responsive UI design.
+● Purpose: This project is a Tiles Gallery Web Application where users can explore different types of tiles, view detailed information and manage their profile. It is built to practice Next.js, authentication and responsive UI design.
 
 ● Key Features: 
 (1) Responsive Navbar with active route highlighting and login/logout state.
