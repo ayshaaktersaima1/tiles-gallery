@@ -18,7 +18,6 @@ const ProfilePage = () => {
 
 
     const userData = authClient.useSession();
-    console.log('user data', userData)
     const user = userData?.data?.user;
     const isValid = isValidUrl(user?.image);
 

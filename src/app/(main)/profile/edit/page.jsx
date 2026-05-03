@@ -5,10 +5,6 @@ import { toast } from 'react-toastify';
 
 const ProfileEdit = () => {
 
-
-
-
-
     const {
         register,
         handleSubmit,
@@ -33,8 +29,6 @@ const ProfileEdit = () => {
 
 
     }
-
-
 
     return (
         <div className='w-[90%] mx-auto my-10 md:my-20 flex items-center justify-center'>

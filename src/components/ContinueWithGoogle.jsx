@@ -1,12 +1,19 @@
 import { authClient } from '@/lib/auth-client';
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const ContinueWithGoogle = () => {
 
     const handleGoogleSignIn = async () => {
-        await authClient.signIn.social({
+        const { data: res, error } = await authClient.signIn.social({
             provider: "google",
         });
+        if (error) {
+            toast.error(error.message);
+        }
+        else {
+            toast.success('Login Successful');
+        }
     }
     return (
         <div>
