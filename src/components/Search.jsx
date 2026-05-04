@@ -34,11 +34,23 @@ const Search = ({ data }) => {
 
                 </form>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
-                {
+
+
+            {
+                filterTile.length == 0 ? <><h1 className='flex justify-center items-center text-center h-[30vh]'>No tile found</h1></>
+                    :
+                    <>
+                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
+                            {
+                                filterTile.map(tile => <Card key={tile.id} tile={tile}></Card>)
+                            }
+                        </div>
+                    </>
+            }
+            {/* {
                     filterTile.map(tile => <Card key={tile.id} tile={tile}></Card>)
-                }
-            </div>
+                } */}
+
         </div>
     );
 };

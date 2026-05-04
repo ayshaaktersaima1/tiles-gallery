@@ -10,9 +10,9 @@ import { SiTicktick } from 'react-icons/si';
 const HomePage = async () => {
 
     const res = await fetch('https://tiles-gallery-xi.vercel.app/data.json');
-    // const res = await fetch('http://localhost:3000/data.json');
+
     const data = await res.json();
-    console.log(data);
+
 
     return (
         <div>
