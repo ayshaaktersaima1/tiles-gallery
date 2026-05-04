@@ -61,7 +61,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className=" text-center text-sm py-5 border-t border-gray-800">
-                <p>© 2025 Tiles Gallery. All rights reserved.</p>
+                <p>© 2026 Tiles Gallery. All rights reserved.</p>
             </div>
         </div>
     );
