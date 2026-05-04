@@ -13,7 +13,8 @@
 (6) Google social login.
 (7) User profile with update feature (name & photo).
 (8) Protected routes for private pages like- profile page and tile details page.
-(9) Fully responsive(mobile, tablet, desktop).
+(9) Loader during data fetching and custom Not-found (404) page.
+(10) Fully responsive(mobile, tablet, desktop).
 
 ● NPM Packages Used:
 (1) Next.js

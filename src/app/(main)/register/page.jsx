@@ -66,7 +66,7 @@ const RegisterPage = () => {
 
                     <ContinueWithGoogle></ContinueWithGoogle>
 
-                    <p className='text-center mt-2'>Already have an account?<span className='text-red-600'><Link href={'/login'}> Login</Link></span></p>
+                    <p className='text-center mt-2'>Already have an account?<span className='text-red-600 font-bold'><Link href={'/login'}> Login</Link></span></p>
 
 
                 </div>
